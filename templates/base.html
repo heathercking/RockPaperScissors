@@ -4,13 +4,15 @@
         <title>{{ title }} - Rock Paper Scissors</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <div id="grid-container"> 
             
             <header>
-                <img src="" alt="LOGO"> 
+                <span id="rock">Rock</span><span id="paper">Paper</span><span id="scissors">Scissors</span>
+                <!-- <img src="./Logo.png" alt="logo">    this just won't show!!-->
             </header>
 
             <div id="menu">
@@ -27,7 +29,7 @@
             {% endblock %}
             </div>
 
-            <footer>&copy; 2020 CodeClan</footer>
+            <footer>&copy; 2021 hevthedev games</footer>
 
         </div>
     </body>

@@ -8,19 +8,46 @@
 
 html {
     font-family: "Quicksand";
+    margin: 0;
+    width: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%
 }
 
 header {
-    padding: 32px;
-    background-color: darkblue;
-    color: white;
+    padding: 15px;
+    background-color: #361999;
     text-align: left;
     grid-area: logo;
+    margin: 0;
+    width: 100%
+}
+
+#rock {
+    color: white;
+    font-family: "Permanent Marker";
+    font-size: 40px;
+}
+
+#paper {
+    color: #FF6495;
+    font-family: "Permanent Marker";
+    font-size: 40px;
+}
+
+#scissors {
+    color: #78FFF1;
+    font-family: "Permanent Marker";
+    font-size: 40px;
 }
 
 #menu {
     padding: 32px;
-    background-color: darkblue;
+    background-color: #361999;
     text-align: right;
     grid-area: menu;
 }
@@ -29,23 +56,30 @@ header {
     color: white;
     text-decoration: none;
     padding: 16px;
+    margin: 10px;
     font-size: 20;
     font-weight: bolder;
+    border: 0.5px solid #78FFF1;
+    border-radius: 10%;
+
 }
 
 
-#main-content {
+#main-content {     
     padding: 32px;
     grid-area: main;
 }
   
 footer {
     padding: 16px;
-    background-color: lightblue;
-    color: #fff;
+    background-color: #361999;
+    color:#FF6495;
     font-weight: bold;
     text-align: center;
     grid-area: footer;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
 #grid-container {
@@ -56,3 +90,12 @@ footer {
       'footer footer';
     grid-template-columns: 3fr 7fr;
   }
+
+#rules {
+    float: left;
+    padding-right: 100px;
+}
+
+  /* #rules-img {
+      float: right;
+  } */
