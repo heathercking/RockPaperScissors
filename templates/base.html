@@ -2,19 +2,34 @@
     
     <head>
         <title>{{ title }} - Rock Paper Scissors</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <ul>
-            <li><a href="/" class="logo">Rock Paper Scissors</a></li>
-            <li><a href="/">Home</a></li>
-            <li><a href="/">Play</a></li>
-        </ul>
+        <div id="grid-container"> 
+            
+            <header>
+                <img src="" alt="LOGO"> 
+            </header>
 
-        {% block content %}
+            <div id="menu">
+                <nav>
+                    <a href="/">Home</a></li>
+                    <a href="/rules">Rules</a></li>
+                    <a href="/play">Play</a></li>
+                </nav>
+            </div>
 
-        {% endblock %}
+            <div id="main-content">
+            {% block content %}
 
+            {% endblock %}
+            </div>
+
+            <footer>&copy; 2020 CodeClan</footer>
+
+        </div>
     </body>
-    
+
 </html>

@@ -1,0 +1,58 @@
+*,
+*::before
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Quicksand";
+}
+
+header {
+    padding: 32px;
+    background-color: darkblue;
+    color: white;
+    text-align: left;
+    grid-area: logo;
+}
+
+#menu {
+    padding: 32px;
+    background-color: darkblue;
+    text-align: right;
+    grid-area: menu;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    font-size: 20;
+    font-weight: bolder;
+}
+
+
+#main-content {
+    padding: 32px;
+    grid-area: main;
+}
+  
+footer {
+    padding: 16px;
+    background-color: lightblue;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    grid-area: footer;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-areas:
+      'logo menu'
+      'main main'
+      'footer footer';
+    grid-template-columns: 3fr 7fr;
+  }
