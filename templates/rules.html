@@ -4,19 +4,23 @@
 
 <h1>The Rules</h1>
     <section id="rules">
-        <p>The rules are simple:</p>
-        <ul>
-            <li>Rock beats scissors</li>
-            <li>Scissors beats paper</li>
-            <li>Paper beats rock</li>
+        <p>The rules are simple! Choose your move - either Rock, Paper, or Scissors - and see if it beats your opponent's choice. In this case, you'll be playing against your computer &#128518. When you're ready, hit the play button below. Good luck!</p>
+        <ul id="rules-list">
+            <li><span class="rock">Rock</span> <span class="beats">beats</span> <span class="scissors">Scissors</span></li>
+            <br>
+            <li><span class="scissors">Scissors</span> <span class="beats">beats</span> <span class="paper">Paper</span></li>
+            <br>
+            <li><span class="paper">Paper</span> <span class="beats">beats</span> <span class="rock">Rock</span></li>
+            <br>
+            <br>
         </ul>
     </section>
 
-    <div id="rules-img">
+    <!-- <div id="rules-img">
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Rock-paper-scissors.svg/1200px-Rock-paper-scissors.svg.png" alt="picture" width="500" height="500">
-    </div>
+    </div> -->
 
-<a href="/play">PLAY NOW</a>
+<a class="play-button" href="/play">PLAY NOW</a>
 
 
 {% endblock %}
