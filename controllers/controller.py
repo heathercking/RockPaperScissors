@@ -15,4 +15,8 @@ def play_game(player1_choice, player2_choice):
     player2 = Player("Player 2")
     player2.assign_choice_to_player(player2_choice)
     result = game1.determine_winner(player1, player2)
-    return render_template('index.html', title='Home', p1 = player1, p2 = player2, result = result)
+    return render_template('play.html', title='Play', p1 = player1, p2 = player2, result = result)
+
+@app.route('/rules')
+def rules():
+    return render_template('rules.html', title='Rules')
