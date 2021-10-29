@@ -18,10 +18,10 @@ def play():
 @app.route('/play', methods=['POST'])
 def display_result():
     game1 = Game("Rock Paper Scissors")
-    player1 = Player("Computer")
+    player1 = Player("The Computer")
     player1_choice = player1.random_choice_generator()
     player1.assign_choice_to_player(player1_choice)
-    player2 = Player("You!")
+    player2 = Player("YOU")
     player2_choice = request.form["choice"]
     player2.assign_choice_to_player(player2_choice)
     result = game1.determine_winner(player1, player2)

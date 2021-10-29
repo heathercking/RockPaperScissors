@@ -167,6 +167,17 @@ header #scissors {
     border: 3px solid #FF6495;
     border-radius: 10%;
 }
+
+#winner-is {
+    font-weight: bolder;
+    color: #FF6495;
+}
+
+#winner-name {
+    font-family: "Permanent Marker";
+    font-size: 20px;
+    margin: 0px 0px 20px;
+}
   
 footer {
     padding: 16px;
