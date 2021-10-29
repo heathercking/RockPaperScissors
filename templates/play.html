@@ -2,13 +2,19 @@
 
 {% block content %}
 
-<h1>The results are in!</h1>
+<h1>Let's play</h1>
 
-    <div>
-        <p>{{ p1.name }} entered "{{ p1.choice }}"</p>
-        <p>{{ p2.name }} entered "{{ p2.choice }}"</p>
-        <p>And the winner is.... <br>{{ result.name }} !!!</p>
-    </div>
+    <form action="/play" method="post">
+        <label for="choice">Enter your move...</label>
+        <select id="choice" name="choice">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissors">Scissors</option>
+        </select>
+        <br>
+        <input class="play-button" type="submit" value="Play">
+
+    </form>
 
 
 {% endblock %}
