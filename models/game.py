@@ -8,7 +8,7 @@ class Game():
             return None
         if player1.choice == "rock":
             if player2.choice == "paper":
-                return "player2 is the winner"
+                return player2
             if player2.choice == "scissors":
                 return player1
         if player1.choice == "paper":

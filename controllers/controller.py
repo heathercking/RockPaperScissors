@@ -1,10 +1,11 @@
+from flask import render_template
 from app import app
 from models.game import Game
 from models.player import Player
 
 @app.route('/')
 def index():
-    return "Welcome to Rock Paper Scissors!"
+    return render_template('index.html', title='Home')
 
 @app.route('/<player1_choice>/<player2_choice>')
 def play_game(player1_choice, player2_choice):
@@ -13,4 +14,5 @@ def play_game(player1_choice, player2_choice):
     player1.assign_choice_to_player(player1_choice)
     player2 = Player("Player 2")
     player2.assign_choice_to_player(player2_choice)
-    return f'{game1.determine_winner(player1, player2)}'
+    result = game1.determine_winner(player1, player2)
+    return render_template('index.html', title='Home', p1 = player1, p2 = player2, result = result)
