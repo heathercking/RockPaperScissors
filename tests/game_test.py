@@ -74,7 +74,4 @@ class TestGame(unittest.TestCase):
         self.player1.assign_choice_to_player("paper")
         self.player2.assign_choice_to_player("scissors")
         self.assertEqual(self.player2, self.game1.determine_winner(self.player1, self.player2))
-    
 
-
-    
