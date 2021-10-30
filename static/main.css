@@ -78,6 +78,8 @@ header #scissors {
 #main-content {     
     padding: 32px;
     grid-area: main;
+    width: 70%;
+    margin: auto;
 }
 
 #grid-container {
@@ -157,6 +159,18 @@ header #scissors {
     border-radius: 10%;
 }
 
+.submit-button {
+    color: black;
+    text-decoration: none;
+    padding: 16px;
+    margin: 30px;
+    font-size: 20;
+    font-weight: bolder;
+    border: 3px solid #361999;
+    background-color: white;
+    border-radius: 10%;
+}
+
 .rules-button {
     color: black;
     text-decoration: none;
@@ -173,17 +187,18 @@ header #scissors {
     color: #FF6495;
 }
 
-#winner-name {
+.winner-name {
     font-family: "Permanent Marker";
     font-size: 20px;
     margin: 0px 0px 20px;
 }
   
 footer {
-    padding: 16px;
+    padding: 8px;
     background-color: #361999;
     color:#FF6495;
     font-weight: bold;
+    font-size: 12px;
     text-align: center;
     grid-area: footer;
     position: fixed;
