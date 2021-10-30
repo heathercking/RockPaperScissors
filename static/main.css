@@ -78,7 +78,7 @@ header #scissors {
 #main-content {     
     padding: 32px;
     grid-area: main;
-    width: 70%;
+    width: 90%;
     margin: auto;
 }
 
