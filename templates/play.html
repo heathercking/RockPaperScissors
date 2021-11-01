@@ -4,7 +4,7 @@
 
 <h1>Let's play</h1>
 
-    <form action="/play" method="post">
+    <!-- <form action="/play" method="post">
         <label for="choice">Choose your move...</label>
         <select id="choice" name="choice">
             <option value="rock">Rock</option>
@@ -13,7 +13,21 @@
         </select>
         <br>
         <input class="submit-button" type="submit" value="Play">
+    </form> -->
 
+    <form action="/play" method="post">
+        <p>Choose your move!</p>
+        <div>
+            <input type="radio" id="choice1" name="choice" value="rock">
+            <!-- <img src="{{ url_for ('static', filename='img/Rock.png') }}"> -->
+            <label for="choice1" class="rock">Rock</label>
+            <input type="radio" id="choice2" name="choice" value="paper">
+            <label for="choice2" class="paper">Paper</label>
+            <input type="radio" id="choice3" name="choice" value="scissors">
+            <label for="choice3" class="scissors">Scissors</label>
+        </div>
+        <br>
+        <input class="submit-button" type="submit" value="Play">
     </form>
 
 
