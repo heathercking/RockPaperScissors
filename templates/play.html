@@ -15,12 +15,12 @@
         <input class="submit-button" type="submit" value="Play">
     </form> -->
 
-    <form action="/play" method="post">
+    <!-- <form action="/play" method="post">
         <p>Choose your move!</p>
         <div>
-            <input type="radio" id="choice1" name="choice" value="rock">
+            <input type="radio" id="choice1" name="choice" value="rock"> -->
             <!-- <img src="{{ url_for ('static', filename='img/Rock.png') }}"> -->
-            <label for="choice1" class="rock">Rock</label>
+            <!-- <label for="choice1" class="rock">Rock</label>
             <input type="radio" id="choice2" name="choice" value="paper">
             <label for="choice2" class="paper">Paper</label>
             <input type="radio" id="choice3" name="choice" value="scissors">
@@ -28,6 +28,15 @@
         </div>
         <br>
         <input class="submit-button" type="submit" value="Play">
+    </form> -->
+
+    <form action="/play" method="post">
+        <p>Choose your move!</p>
+        <div>
+            <input class="rock" type="submit" name="choice" value="rock">
+            <input class="paper" type="submit" name="choice" value="paper">
+            <input class="scissors" type="submit" name="choice" value="scissors">
+        </div>
     </form>
 
 

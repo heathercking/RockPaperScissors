@@ -126,6 +126,18 @@ header #scissors {
     padding: 2px 10px;
 }
 
+.rock:hover{
+    transform: translateY(-5px);
+}
+
+.paper:hover {
+    transform: translateY(-5px);
+}
+
+.scissors:hover {
+    transform: translateY(-5px);
+}
+
 .beats {
     color:black;
     font-family: "Permanent Marker";
@@ -202,12 +214,11 @@ img {
 
 #winner-is {
     font-weight: bolder;
-    color: #FF6495;
 }
 
 .winner-name {
     font-family: "Permanent Marker";
-    font-size: 20px;
+    font-size: 30px;
     margin: 0px 0px 20px;
 }
   
